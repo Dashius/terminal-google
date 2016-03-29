@@ -24,9 +24,13 @@ i = 1
 for link in links:
         try:
                 if( len( sys.argv ) > 2 and sys.argv[2] == '--links' ):
-                        print( "%s -> %s\n\tsource -> %s\n\tlink -> %s\n%s" % ( i, ' '.join ( link.find( 'span', class_ = 'st').text.split() ), link.find( 'cite' ).text, link.h3.a['href'].split('q=')[1], separator ) )
+                        print( "%s -> %s\n\tsource -> %s\n\tlink -> %s\n%s"
+                                % ( i, ' '.join ( link.find( 'span', class_ = 'st').text.split() ),
+                                        link.find( 'cite' ).text, link.h3.a['href'].split('q=')[1], separator ) )
                 else:
-                        print( "%s -> %s\n\tsource -> %s\n%s" % ( i, ' '.join ( link.find( 'span', class_ = 'st').text.split() ), link.find( 'cite' ).text, separator ) )
+                        print( "%s -> %s\n\tsource -> %s\n%s"
+                                % ( i, ' '.join ( link.find( 'span', class_ = 'st').text.split() ),
+                                        link.find( 'cite' ).text, separator ) )
                 i += 1
         except Exception:
                 pass
