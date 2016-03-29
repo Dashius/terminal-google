@@ -11,7 +11,7 @@ Run via: ./googleScraper.py 'search_query' --links
 
 # Usage suggestion:
 - git clone (this repo)
-- cp googleScraper.py ./.googleScraper.y
+- cp googleScraper.py ./.googleScraper.py
 - echo "alias google='/home/$USER/.googleScraper.py'" >> ~/.bashrc
 - Restart bash
 - google 'myquery'
