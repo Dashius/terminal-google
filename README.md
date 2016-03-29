@@ -9,6 +9,14 @@ Run via: ./googleScraper.py 'search_query' --links
 
 (--links is optional but it includes full links, which may be pretty long for certain queries).
 
+# Usage suggestion:
+- git clone (this repo)
+- cp googleScraper.py ./.googleScraper.y
+- echo "alias google='/home/$USER/.googleScraper.py'" >> ~/.bashrc
+- Restart bash
+- google 'myquery'
+- Enjoy
+
 # Requirements:
 - phantomjs
 - BeautifulSoup
